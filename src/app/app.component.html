@@ -1,0 +1,10 @@
+
+<h1>File Upload</h1>
+<input
+  style="display: none"
+  type="file"
+  (change)="onFileSelected($event)"
+  #fileInput>
+<button type="button" (click)="fileInput.click()">Select File</button>
+{{ selectedFilename }}
+<button type="button" (click)="onUpload()">Upload</button>
